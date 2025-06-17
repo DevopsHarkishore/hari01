@@ -38,7 +38,3 @@ resource "azurerm_storage_account" "storagetesting" {
 
 }
 
-resource "azurerm_resource_group" "rg-testing1" {
-  name     = "Ashsis1"
-  location = "West Europe"
-}
