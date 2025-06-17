@@ -24,14 +24,14 @@ provider "azurerm" {
 
 
 resource "azurerm_resource_group" "rg-testing" {
-  name     = "Ashsis"
-  location = "West Europe"
+  name     = "harkishore"
+  location = "eastus"
 }
 
 resource "azurerm_storage_account" "storagetesting" {
   depends_on               = [azurerm_resource_group.rg-testing]
   name                     = "examplestoracc1321"
-  resource_group_name      = "Ashsis"
+  resource_group_name      = "harkishore"
   location                 = "West Europe"
   account_tier             = "Standard"
   account_replication_type = "LRS"
